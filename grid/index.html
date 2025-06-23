@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>grid</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 60px 1fr;
+            grid-template-areas:
+    "header header"
+    "sidebar content";
+        }
+
+        .header  { grid-area: header; background: #ccc; }
+        .sidebar { grid-area: sidebar; background: #aaa; }
+        .content { grid-area: content; background: #eee; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Header
+        </div>
+
+        <div class="sidebar">
+            Sidebar
+        </div>
+
+        <div class="content">
+            Content
+        </div>
+    </div>
+</body>
+</html>

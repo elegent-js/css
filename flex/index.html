@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex sample</title>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid #000;
+            justify-content: center;
+
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .container .item {
+            border: 1px solid red;
+            flex: 1 1 200px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="item" style="height: 50px;">111111111111111111111111111111111111111</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</div>
+
+</body>
+</html>
